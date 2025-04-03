@@ -1,0 +1,95 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/locationText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="148dp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Esperando ubicación..."
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnOpenInMaps"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="📍 Ver en Google Maps"
+        android:backgroundTint="#2D9CDB"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:padding="12dp"
+        android:elevation="4dp"
+        android:background="@drawable/rounded_button"
+        app:layout_constraintTop_toBottomOf="@id/locationText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnShare"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="📤 Compartir ubicación"
+        android:backgroundTint="#27AE60"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:padding="12dp"
+        android:elevation="4dp"
+        android:background="@drawable/rounded_button"
+        app:layout_constraintTop_toBottomOf="@id/btnOpenInMaps"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnToggleUpdates"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="🎯 Comenzar ubicación"
+        android:backgroundTint="#F39C12"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:padding="12dp"
+        android:elevation="4dp"
+        android:background="@drawable/rounded_button"
+        app:layout_constraintTop_toBottomOf="@id/btnShare"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnShowHistory"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="🕓 Ver historial"
+        android:backgroundTint="#9B51E0"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:padding="12dp"
+        android:elevation="4dp"
+        android:background="@drawable/rounded_button"
+        app:layout_constraintTop_toBottomOf="@id/btnToggleUpdates"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
